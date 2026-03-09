@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ML Diamond Shop</title>
+
+<style>
+body{
+font-family: Arial;
+background:#0f172a;
+color:white;
+text-align:center;
+}
+
+.card{
+background:#1e293b;
+margin:20px;
+padding:20px;
+border-radius:10px;
+}
+
+button{
+background:#22c55e;
+border:none;
+padding:10px 20px;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+}
+
+input{
+padding:10px;
+margin:10px;
+width:200px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>ML Diamond Shop</h1>
+
+<div class="card">
+<h2>86 Diamonds</h2>
+<p>Price - 1800 Ks</p>
+<button onclick="order('86 Diamonds')">Order</button>
+</div>
+
+<div class="card">
+<h2>172 Diamonds</h2>
+<p>Price - 3600 Ks</p>
+<button onclick="order('172 Diamonds')">Order</button>
+</div>
+
+<div class="card">
+<h2>257 Diamonds</h2>
+<p>Price - 5200 Ks</p>
+<button onclick="order('257 Diamonds')">Order</button>
+</div>
+
+<h2>Player Info</h2>
+
+<input id="player" placeholder="Player ID"><br>
+<input id="server" placeholder="Server ID"><br>
+
+<script>
+
+function order(pkg){
+
+let id = document.getElementById("player").value
+let server = document.getElementById("server").value
+
+let text = "ML Order%0A" +
+"Package: " + pkg + "%0A" +
+"Player ID: " + id + "%0A" +
+"Server: " + server
+
+window.open("https://t.me/pstonfire46")
+
+}
+
+</script>
+
+</body>
+</html>
