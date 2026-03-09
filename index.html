@@ -2,85 +2,89 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ML Diamond Shop</title>
+<title>P-A Game Shop</title>
 
 <style>
 body{
 font-family: Arial;
-background:#0f172a;
+background:#111;
 color:white;
 text-align:center;
 }
 
-.card{
-background:#1e293b;
-margin:20px;
-padding:20px;
+h1{
+background:#ff9800;
+padding:15px;
+}
+
+.shop{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.item{
+background:#222;
+margin:10px;
+padding:15px;
 border-radius:10px;
+width:200px;
 }
 
 button{
-background:#22c55e;
-border:none;
-padding:10px 20px;
+background:#00c853;
 color:white;
-font-size:16px;
-border-radius:6px;
+border:none;
+padding:10px;
+border-radius:5px;
 cursor:pointer;
 }
 
-input{
-padding:10px;
-margin:10px;
-width:200px;
+button:hover{
+background:#00e676;
 }
 </style>
 </head>
 
 <body>
 
-<h1>ML Diamond Shop</h1>
+<h1>P-A Mobile Legends Diamond Shop</h1>
 
-<div class="card">
-<h2>86 Diamonds</h2>
-<p>Price - 1800 Ks</p>
-<button onclick="order('86 Diamonds')">Order</button>
+<div class="shop">
+
+<div class="item">
+<h3>86 Diamonds</h3>
+<p>Price - 2000 Ks</p>
+<a href="https://t.me/pstonfire46?text=I want to buy 86 Diamonds">
+<button>Buy Now</button>
+</a>
 </div>
 
-<div class="card">
-<h2>172 Diamonds</h2>
-<p>Price - 3600 Ks</p>
-<button onclick="order('172 Diamonds')">Order</button>
+<div class="item">
+<h3>172 Diamonds</h3>
+<p>Price - 4000 Ks</p>
+<a href="https://t.me/pstonfire46?text=I want to buy 172 Diamonds">
+<button>Buy Now</button>
+</a>
 </div>
 
-<div class="card">
-<h2>257 Diamonds</h2>
-<p>Price - 5200 Ks</p>
-<button onclick="order('257 Diamonds')">Order</button>
+<div class="item">
+<h3>257 Diamonds</h3>
+<p>Price - 6000 Ks</p>
+<a href="https://t.me/pstonfire46?text=I want to buy 257 Diamonds">
+<button>Buy Now</button>
+</a>
 </div>
 
-<h2>Player Info</h2>
+<div class="item">
+<h3>344 Diamonds</h3>
+<p>Price - 8000 Ks</p>
+<a href="https://t.me/pstonfire46?text=I want to buy 344 Diamonds">
+<button>Buy Now</button>
+</a>
+</div>
 
-<input id="player" placeholder="Player ID"><br>
-<input id="server" placeholder="Server ID"><br>
-
-<script>
-
-function order(pkg){
-
-let id = document.getElementById("player").value
-let server = document.getElementById("server").value
-
-let text = "ML Order%0A" +
-"Package: " + pkg + "%0A" +
-"Player ID: " + id + "%0A" +
-"Server: " + server
-
-window.open("https://t.me/pstonfire46")
-
-}
-
-</script>
+</div>
 
 </body>
 </html>
